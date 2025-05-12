@@ -1,4 +1,4 @@
-# Taller Git Programación 1 2013
+# Taller Git Programación 
 
 ## Instalación
 
@@ -44,11 +44,8 @@ git commit -m "Resuelto ejercicio 1"
 git push
 ```
 
-Luego de resolver **todos** los ejercicios y hacer un push de cada uno, debe hacer un pull request desde su repositorio remoto a este repositorio (FacultadDeIngenieria/tallergitprog1). Tiene una guía para hacerlo [aquí](https://docs.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
+Después de resolver los ejercicios y hacer un push de cada uno, debe hacer un pull request desde su repositorio remoto al repositorio de la profesora
+Tiene una guía para hacerlo [aquí](https://docs.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
 
-### Terminé los ejercicios, ¿ahora qué?
-
-Una vez que haya terminado los ejercicios, debe hacer un pull request desde su repositorio remoto a este repositorio (FacultadDeIngenieria/tallergitprog1). Tiene una guía para hacerlo [aquí](https://docs.github.com/es/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
-
-Espere a que un ayudante/profesor revise su pull request y lo apruebe. Una vez que su pull request haya sido aprobado.
+Espere a que un profesor revise su pull request y lo apruebe. 
 
