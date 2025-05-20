@@ -4,7 +4,7 @@ Para el primer ejercicio, se debe crear un archivo `nombre_apellido.txt`, dentro
 
 En este archivo, se va a guardar las respuestas teóricas y algunos resultados de los mismos.
 
-## Ejercicio 1
+ ´´jercicio 1``
 
 ### 1.1. Preguntas
 
