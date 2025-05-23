@@ -1,0 +1,351 @@
+¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
+git init
+¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
+rm -rf .git
+Si agrega un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
+No inmediatamente. Para que el archivo sea controlado por Git, debes agregarlo manualmente
+¿Qué comando se utiliza para agregar un archivo al repositorio local?
+git add nombre_del_archivo
+¿Cómo determina que archivos fueron modificados? (que comando se debe ejecutar?)
+git status
+¿Qué comando se utiliza para hacer un commit?
+git commit -m "Mensaje del commit"
+En sus propias palabras, ¿qué es un compromiso?
+Un compromiso (commit) en Git es como una foto que guarda el estado de los archivos en un momento determinado. Sirve para registrar cambios que has hecho en el proyecto, con un mensaje que explica qué modificaste y por qué. Así puedes llevar un historial claro y volver a versiones anteriores si lo necesitas.
+
+
+
+
+
+lo que sale al ejecutar comando git log:
+
+commit 1ef509eab2bfa1772e3e6602fee36b4bfc45ef7a
+Author: jooseetee <josequezadafp@gmail.com>
+Date:   Fri May 23 09:46:59 2025 +0200
+
+    Agrego salsas
+
+commit 27ae2d4633df71d57f8caf6eba02df8e94cf9d91
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 12:23:35 2025 +0200
+
+    Update README.md
+
+commit f6afc2592973b03bb453145cc563f6f7074c9a7f
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 12:19:50 2025 +0200
+
+    Add files via upload
+
+commit 9d8e0e2b6cf30f98c92b1a78f14aeeee44b4e3bb
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 12:18:57 2025 +0200
+
+    Delete tallergitprog1-main directory
+
+commit 88fecc16a122d865f9d8558fc4cef1eedd2f209b
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 12:17:39 2025 +0200
+
+    Add files via upload
+
+commit 3a7d2855c5b4f45be24cdfef97d8cbde7affedc9
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 11:27:56 2025 +0200
+
+    Update estilos
+    
+    Añado 6 g extra al final de la línea 4
+
+commit dac6aed44b369c825b775155c6083a34a8410c69
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 11:15:24 2025 +0200
+
+    Rename estilos.md to estilos
+
+commit b15c251307a269207133e51078f926c31846f28d
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 10:42:50 2025 +0200
+
+    Update estilos.md
+    
+    Añado un segundo título.
+    Borro la palabra grammar de la primera línea
+
+commit 4327ba9c46eff663d9662d0b0f9eabb8a2157597
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 10:32:24 2025 +0200
+
+    Update and rename archivo_1.md to estilos.md
+
+commit 67da0bbeaf54bd874566cea5341487697160f75f
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 10:27:12 2025 +0200
+
+    Create archivo_1.md
+
+commit 167f211b33d87aeb4f1ed06c8e60850b41d849fb
+Merge: 175fc71 ddcaf01
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 5 11:25:10 2025 +0200
+
+    Merge pull request #1 from Lidia-lcm/rama-local
+    
+    Creacion de carpeta y subida de imagen
+
+commit ddcaf01a24fc71fe4a48588bc371ccdcccebd1a1
+Author: Lidia La Cal <lidialacalm@gmail.com>
+Date:   Mon May 5 11:00:01 2025 +0200
+
+    Creacion de carpeta y subida de imagen
+
+commit 175fc71ddee6effbea666b05d598d1ed758562d7
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon Apr 28 10:40:08 2025 +0200
+
+    Update README.md
+
+commit 7103b6ae7bf65fa34a6b34d88384e08cb3aa6234
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon Apr 28 10:01:29 2025 +0200
+
+    Initial commit
+
+
+
+Explicación:
+
+El comando 'git log' muestra el historial de commits realizados en el repositorio.
+
+Cada commit incluye:
+- Hash: identificador único del commit.
+- Autor: quién hizo el commit.
+- Fecha: cuándo se hizo el commit.
+- Mensaje: descripción del cambio realizado.
+
+Los commits aparecen en orden cronológico inverso, es decir, primero el commit más reciente y al final el más antiguo.
+
+
+
+Pruebe las variaciones del comando git logy explique que observa en cada una de ellas. 10.1. git log --oneline
+
+1ef509e Agrego salsas
+27ae2d4 Update README.md
+f6afc25 Add files via upload
+9d8e0e2 Delete tallergitprog1-main directory
+88fecc1 Add files via upload
+3a7d285 Update estilos
+dac6aed Rename estilos.md to estilos
+b15c251 Update estilos.md
+4327ba9 Update and rename archivo_1.md to estilos.md
+67da0bb Create archivo_1.md
+167f211 Merge pull request #1 from Lidia-lcm/rama-local
+ddcaf01 Creacion de carpeta y subida de imagen
+175fc71 Update README.md
+7103b6a Initial commit
+
+
+explicacion: 
+Este comando muestra el historial de commits en forma resumida.  
+Cada commit aparece en una sola línea con:  
+- Un hash corto (identificador único).  
+- El mensaje del commit.
+
+Es útil para ver rápido los commits sin detalles extensos.
+
+commit 1ef509eab2bfa1772e3e6602fee36b4bfc45ef7a
+Author: jooseetee <josequezadafp@gmail.com>
+Date:   Fri May 23 09:46:59 2025 +0200
+
+    Agrego salsas
+
+ Actividades/1.commit/sandwich.txt | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+commit 27ae2d4633df71d57f8caf6eba02df8e94cf9d91
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 12:23:35 2025 +0200
+
+    Update README.md
+
+ Actividades/README.md | 11 ++++-------
+ 1 file changed, 4 insertions(+), 7 deletions(-)
+
+commit f6afc2592973b03bb453145cc563f6f7074c9a7f
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 12:19:50 2025 +0200
+
+    Add files via upload
+
+ Actividades/1.commit/README.md       | 55 +++++++++++++++++++++++++
+ Actividades/1.commit/sandwich.txt    |  4 ++
+ Actividades/2.branchs/README.md      | 78 ++++++++++++++++++++++++++++++++++++
+ Actividades/2.branchs/pizza.txt      |  3 ++
+ Actividades/3.conflicts/README.md    | 48 ++++++++++++++++++++++
+ Actividades/3.conflicts/milanesa.txt |  2 +
+ Actividades/README.md                | 54 +++++++++++++++++++++++++
+ 7 files changed, 244 insertions(+)
+
+commit 9d8e0e2b6cf30f98c92b1a78f14aeeee44b4e3bb
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 12:18:57 2025 +0200
+
+    Delete tallergitprog1-main directory
+
+ tallergitprog1-main/1.commit/README.md       | 55 --------------------
+ tallergitprog1-main/1.commit/sandwich.txt    |  4 --
+ tallergitprog1-main/2.branchs/README.md      | 78 ----------------------------
+ tallergitprog1-main/2.branchs/pizza.txt      |  3 --
+ tallergitprog1-main/3.conflicts/README.md    | 48 -----------------
+ tallergitprog1-main/3.conflicts/milanesa.txt |  2 -
+ tallergitprog1-main/README.md                | 54 -------------------
+ 7 files changed, 244 deletions(-)
+
+commit 88fecc16a122d865f9d8558fc4cef1eedd2f209b
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 12:17:39 2025 +0200
+
+    Add files via upload
+
+ tallergitprog1-main/1.commit/README.md       | 55 ++++++++++++++++++++
+ tallergitprog1-main/1.commit/sandwich.txt    |  4 ++
+ tallergitprog1-main/2.branchs/README.md      | 78 ++++++++++++++++++++++++++++
+ tallergitprog1-main/2.branchs/pizza.txt      |  3 ++
+ tallergitprog1-main/3.conflicts/README.md    | 48 +++++++++++++++++
+ tallergitprog1-main/3.conflicts/milanesa.txt |  2 +
+ tallergitprog1-main/README.md                | 54 +++++++++++++++++++
+ 7 files changed, 244 insertions(+)
+
+commit 3a7d2855c5b4f45be24cdfef97d8cbde7affedc9
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 11:27:56 2025 +0200
+
+    Update estilos
+    
+    Añado 6 g extra al final de la línea 4
+
+ carpeta_1/estilos | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit dac6aed44b369c825b775155c6083a34a8410c69
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 11:15:24 2025 +0200
+
+    Rename estilos.md to estilos
+
+ carpeta_1/{estilos.md => estilos} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b15c251307a269207133e51078f926c31846f28d
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 10:42:50 2025 +0200
+
+    Update estilos.md
+    
+    Añado un segundo título.
+    Borro la palabra grammar de la primera línea
+
+ carpeta_1/estilos.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 4327ba9c46eff663d9662d0b0f9eabb8a2157597
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 10:32:24 2025 +0200
+
+    Update and rename archivo_1.md to estilos.md
+
+ carpeta_1/archivo_1.md |  1 -
+ carpeta_1/estilos.md   | 83 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 83 insertions(+), 1 deletion(-)
+
+commit 67da0bbeaf54bd874566cea5341487697160f75f
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 12 10:27:12 2025 +0200
+
+    Create archivo_1.md
+
+ carpeta_1/archivo_1.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 167f211b33d87aeb4f1ed06c8e60850b41d849fb
+Merge: 175fc71 ddcaf01
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon May 5 11:25:10 2025 +0200
+
+    Merge pull request #1 from Lidia-lcm/rama-local
+    
+    Creacion de carpeta y subida de imagen
+
+commit ddcaf01a24fc71fe4a48588bc371ccdcccebd1a1
+Author: Lidia La Cal <lidialacalm@gmail.com>
+Date:   Mon May 5 11:00:01 2025 +0200
+
+    Creacion de carpeta y subida de imagen
+
+ img/logo_github.jpg | Bin 0 -> 34330 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 175fc71ddee6effbea666b05d598d1ed758562d7
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon Apr 28 10:40:08 2025 +0200
+
+    Update README.md
+
+ README.md | 30 +++++++++++++++++++++++++++++-
+ 1 file changed, 29 insertions(+), 1 deletion(-)
+
+commit 7103b6ae7bf65fa34a6b34d88384e08cb3aa6234
+Author: Lidia-lcm <lidialacalm@gmail.com>
+Date:   Mon Apr 28 10:01:29 2025 +0200
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+expliacion: 
+Este comando muestra el historial de commits junto con un resumen  
+de los archivos modificados en cada commit, incluyendo:  
+- Archivos afectados.  
+- Líneas añadidas (+) y eliminadas (-).  
+- Resumen total de cambios por commit.
+
+Esto ayuda a entender qué archivos cambiaron y cuánto en cada commit.
+
+
+
+
+
+
+Inspeccione diferencias entre los commits, use el comando git diff y explique que significa cada uno de los resultados. 11.1. En Windows, pruebe git difftool --tool=meld <hash> 11.2
+
+11.1 git diff <hash1> <hash2>
+
+Este comando muestra las diferencias entre dos commits línea por línea.  
+Las líneas eliminadas aparecen con "-" y en rojo, y las añadidas con "+" y en verde.  
+Permite ver exactamente qué se cambió en cada archivo.
+
+11.2 git difftool --tool=meld <hash1> <hash2>
+
+Este comando abre una herramienta gráfica llamada Meld para comparar dos commits.  
+Meld muestra los archivos modificados y las diferencias de forma visual, lado a lado,  
+lo que facilita entender y revisar los cambios realizados.
+
+
+
+
+
+espués de renombrar el archivo (git mv sandwich2.txt sandwich2_feo.txt) y hacer commit:
+Explicación del cambio en git status:
+
+Antes del commit, git status mostraba que el archivo sandwich2.txt estaba eliminado (deleted) y que sandwich2_feo.txt estaba agregado (new file), porque el renombrado se interpreta internamente como eliminar el archivo viejo y agregar uno nuevo.
+
+Después de hacer el commit con esos cambios, al ejecutar git status ya no muestra ningún cambio pendiente: el área de trabajo y el índice están limpios, porque el commit registró oficialmente el renombrado.
+
+Después de borrar el archivo (git rm sandwich2_feo.txt) y hacer commit:
+Explicación del cambio en git status:
+
+Antes del commit, git status mostraba que el archivo sandwich2_feo.txt estaba eliminado (deleted) y preparado para el commit (staged for deletion).
+
+Después de hacer el commit con la eliminación, al ejecutar git status ya no muestra ningún cambio pendiente: el repositorio está limpio porque el commit registró oficialmente la eliminación del archivo.
+
