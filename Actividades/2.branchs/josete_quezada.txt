@@ -1,0 +1,276 @@
+¿Qué es una sucursal?
+Es una línea de desarrollo independiente en Git, también llamada rama.
+
+¿Por qué pueden ser útiles las sucursales?
+Permiten trabajar en cambios o funciones sin afectar la rama principal.
+
+¿Cómo se crea una rama?
+git branch nombre_rama
+
+¿Cómo se cambia a una sucursal?
+git checkout nombre_rama
+
+¿Cómo se elimina una rama?
+git branch -d nombre_rama
+
+¿Cómo se crea una rama y se cambia a ella en un solo paso?
+git checkout -b nombre_rama
+
+¿Qué es una merge?
+Es la fusión de los cambios de una rama dentro de otra.
+
+¿Cómo se realiza una fusión?
+Estando en la rama destino: git merge nombre_rama
+
+¿Qué es una etiqueta?
+Es una marca fija en un commit, usada para versiones o hitos.
+
+¿Cómo se crea una etiqueta?
+git tag nombre_etiqueta
+
+
+
+
+
+
+
+
+
+QUE CORRE EL COMANDO GITGRAPH: 
+* 01a22f9 (HEAD -> main, origin/main, origin/HEAD, experimento) Guardo respuestas y explicaciones en jose_quezada.txt
+* 1ef509e Agrego salsas
+| * 6dc4a46 (origin/patch-4) Create sandwichd.txt
+|/  
+| * 507873b (origin/patch-3) Create jose_quezada.txt
+|/  
+| * d61f70d (origin/patch-2) Create jose_quezada
+|/  
+| * 8e343aa (origin/patch-1) Create josequezadacamacho.txt
+|/  
+* 27ae2d4 Update README.md
+* f6afc25 Add files via upload
+* 9d8e0e2 Delete tallergitprog1-main directory
+* 88fecc1 Add files via upload
+* 3a7d285 Update estilos
+* dac6aed Rename estilos.md to estilos
+* b15c251 Update estilos.md
+* 4327ba9 Update and rename archivo_1.md to estilos.md
+* 67da0bb Create archivo_1.md
+*   167f211 Merge pull request #1 from Lidia-lcm/rama-local
+|\  
+| * ddcaf01 (origin/rama-local) Creacion de carpeta y subida de imagen
+|/  
+* 175fc71 Update README.md
+* 7103b6a Initial commit
+
+
+
+
+¿Qué branches están "mergeadas" a master? 
+C:\Users\Jose Ramon\Desktop\IESlaCa-uelaAWEB\Actividades\2.branchs>git branch --merged
+  experimento
+* main 
+
+Haga un merge de la branch experimento a la branch master
+
+C:\Users\Jose Ramon\Desktop\IESlaCa-uelaAWEB\Actividades\2.branchs>git merge experimento
+Already up to date.
+
+C:\Users\Jose Ramon\Desktop\IESlaCa-uelaAWEB\Actividades\2.branchs>git graph
+* 01a22f9 (HEAD -> main, origin/main, origin/HEAD, experimento) Guardo respuestas y explicaciones en jose_quezada.txt
+* 1ef509e Agrego salsas
+| * 6dc4a46 (origin/patch-4) Create sandwichd.txt
+|/
+| * 507873b (origin/patch-3) Create jose_quezada.txt
+|/
+| * d61f70d (origin/patch-2) Create jose_quezada
+|/
+| * 8e343aa (origin/patch-1) Create josequezadacamacho.txt
+|/
+* 27ae2d4 Update README.md
+* f6afc25 Add files via upload
+* 9d8e0e2 Delete tallergitprog1-main directory
+* 88fecc1 Add files via upload
+* 3a7d285 Update estilos
+* dac6aed Rename estilos.md to estilos
+* b15c251 Update estilos.md
+* 4327ba9 Update and rename archivo_1.md to estilos.md
+* 67da0bb Create archivo_1.md
+*   167f211 Merge pull request #1 from Lidia-lcm/rama-local
+|\
+| * ddcaf01 (origin/rama-local) Creacion de carpeta y subida de imagen
+|/
+* 175fc71 Update README.md
+* 7103b6a Initial commit
+
+
+
+Correr el comando git graph y observar el resultado
+
+* 01a22f9 (HEAD -> main, origin/main, origin/HEAD, experimento) Guardo respuestas y explicaciones en jose_quezada.txt
+* 1ef509e Agrego salsas
+| * 6dc4a46 (origin/patch-4) Create sandwichd.txt
+|/  
+| * 507873b (origin/patch-3) Create jose_quezada.txt
+|/  
+| * d61f70d (origin/patch-2) Create jose_quezada
+|/  
+| * 8e343aa (origin/patch-1) Create josequezadacamacho.txt
+|/  
+* 27ae2d4 Update README.md
+* f6afc25 Add files via upload
+* 9d8e0e2 Delete tallergitprog1-main directory
+* 88fecc1 Add files via upload
+* 3a7d285 Update estilos
+* dac6aed Rename estilos.md to estilos
+* b15c251 Update estilos.md
+* 4327ba9 Update and rename archivo_1.md to estilos.md
+* 67da0bb Create archivo_1.md
+*   167f211 Merge pull request #1 from Lidia-lcm/rama-local
+|\  
+| * ddcaf01 (origin/rama-local) Creacion de carpeta y subida de imagen
+|/  
+* 175fc71 Update README.md
+* 7103b6a Initial commit
+
+¿Tuvo que hacer un merge manual, o git lo hizo automáticamente? ¿Por qué?
+
+Si no hubo conflictos entre los cambios de las ramas, Git hizo el merge automáticamente.
+
+
+
+¿Qué branches están "mergeadas" a master?
+
+C:\Users\Jose Ramon\Desktop\IESlaCa-uelaAWEB\Actividades\2.branchs>git branch --merged
+  experimento
+* main
+
+
+Elimine la branch anana
+utilize el comando git branch -d anana
+
+elimine la branch experimento 
+utilize el comando git branch -d experimento
+
+¿Qué branches están "mergeadas" a master?
+
+C:\Users\Jose Ramon\Desktop\IESlaCa-uelaAWEB\Actividades\2.branchs>git branch --merged
+  experimento
+* main
+
+
+Correr el comando git graph y observar el resultado.
+* 01a22f9 (HEAD -> main, origin/main, origin/HEAD, experimento) Guardo respuestas y explicaciones en jose_quezada.txt
+* 1ef509e Agrego salsas
+| * 6dc4a46 (origin/patch-4) Create sandwichd.txt
+|/  
+| * 507873b (origin/patch-3) Create jose_quezada.txt
+|/  
+| * d61f70d (origin/patch-2) Create jose_quezada
+|/  
+| * 8e343aa (origin/patch-1) Create josequezadacamacho.txt
+|/  
+* 27ae2d4 Update README.md
+* f6afc25 Add files via upload
+* 9d8e0e2 Delete tallergitprog1-main directory
+* 88fecc1 Add files via upload
+* 3a7d285 Update estilos
+* dac6aed Rename estilos.md to estilos
+* b15c251 Update estilos.md
+* 4327ba9 Update and rename archivo_1.md to estilos.md
+* 67da0bb Create archivo_1.md
+*   167f211 Merge pull request #1 from Lidia-lcm/rama-local
+|\  
+| * ddcaf01 (origin/rama-local) Creacion de carpeta y subida de imagen
+|/  
+* 175fc71 Update README.md
+* 7103b6a Initial commit
+
+
+
+Crear un tag pizza en el último commit
+git tag -a pizza -m "Receta de la pizza.""
+
+Ver los tags creados.
+C:\Users\Jose Ramon\Desktop\IESlaCa-uelaAWEB\Actividades\2.branchs>git tag
+pizza
+
+
+Ver el tag pizza
+
+
+tag pizza
+Tagger: jooseetee <josequezadafp@gmail.com>
+Date:   Fri May 23 13:07:31 2025 +0200
+
+Receta de la pizza."
+
+commit 01a22f9a2f6165ae1aa9b539c0f4dd134318370f (HEAD -> main, tag: pizza, origin/main, origin/HEAD, experimento)
+Author: jooseetee <josequezadafp@gmail.com>
+Date:   Fri May 23 10:37:45 2025 +0200
+
+    Guardo respuestas y explicaciones en jose_quezada.txt
+
+diff --git a/Actividades/1.commit/jose_quezada.txt b/Actividades/1.commit/jose_quezada.txt
+new file mode 100644
+index 0000000..7fa597c
+--- /dev/null
++++ b/Actividades/1.commit/jose_quezada.txt
+@@ -0,0 +1,351 @@
++¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
++git init
++¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
++rm -rf .git
++Si agrega un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
++No inmediatamente. Para que el archivo sea controlado por Git, debes agregarlo manualmente
++¿Qué comando se utiliza para agregar un archivo al repositorio local?
++git add nombre_del_archivo
++¿Cómo determina que archivos fueron modificados? (que comando se debe ejecutar?)
++git status
++¿Qué comando se utiliza para hacer un commit?
+:...skipping...
+tag pizza
+Tagger: jooseetee <josequezadafp@gmail.com>
+Date:   Fri May 23 13:07:31 2025 +0200
+
+Receta de la pizza."
+
+commit 01a22f9a2f6165ae1aa9b539c0f4dd134318370f (HEAD -> main, tag: pizza, origin/main, origin/HEAD, experimento)
+Author: jooseetee <josequezadafp@gmail.com>
+Date:   Fri May 23 10:37:45 2025 +0200
+
+    Guardo respuestas y explicaciones en jose_quezada.txt
+
+diff --git a/Actividades/1.commit/jose_quezada.txt b/Actividades/1.commit/jose_quezada.txt
+new file mode 100644
+index 0000000..7fa597c
+--- /dev/null
++++ b/Actividades/1.commit/jose_quezada.txt
+@@ -0,0 +1,351 @@
++¿Cómo se inicializa un repositorio local? (que comando se debe ejecutar?)
++git init
++¿Cómo hago para que un directorio deje de ser controlado por git? (que comando se debe ejecutar?)
++rm -rf .git
++Si agrega un archivo a un directorio que ya está siendo controlado por git, ¿está siendo controlado por git?
++No inmediatamente. Para que el archivo sea controlado por Git, debes agregarlo manualmente
++¿Qué comando se utiliza para agregar un archivo al repositorio local?
++git add nombre_del_archivo
++¿Cómo determina que archivos fueron modificados? (que comando se debe ejecutar?)
++git status
++¿Qué comando se utiliza para hacer un commit?
++git commit -m "Mensaje del commit"
++En sus propias palabras, ¿qué es un compromiso?
++Un compromiso (commit) en Git es como una foto que guarda el estado de los archivos en un momento determinado. Sirve para registrar cambios que has hecho en el proyecto, con un mensaje que explica qué modificaste y por qué. Así puedes llevar un historial claro y volver a versiones anteriores si lo necesitas.
++
++
++
++
++
++lo que sale al ejecutar comando git log:
++
++commit 1ef509eab2bfa1772e3e6602fee36b4bfc45ef7a
++Author: jooseetee <josequezadafp@gmail.com>
++Date:   Fri May 23 09:46:59 2025 +0200
+:
+
+
