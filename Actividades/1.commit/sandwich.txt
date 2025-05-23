@@ -2,3 +2,8 @@ pan
 queso
 medallón
 pan
+cebolla
+ternera
+mostaza
+mayonesa
+salsa brava
